@@ -20,7 +20,6 @@ steps:
   displayName: 'Run a multi-line script'
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '/snake/'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
